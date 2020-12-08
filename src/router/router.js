@@ -4,8 +4,7 @@ import SignUpPage from '../pages/RegistersAndLogin/SignUpPage/index'
 import AdressRegisterPage from '../pages/RegistersAndLogin/AdressRegisterPage/index'
 import FeedPage from '../pages/Home/FeedPage/index'
 import RestaurantPage from '../pages/RestaurantPage/index'
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Switch } from '@material-ui/core';
+import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import CartPage from '../pages/CartPage';
 import ProfilePage from '../pages/Profile/ProfilePage';
 import EditAdressPage from '../pages/Profile/EditAdressPage';
@@ -15,7 +14,6 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-
                 <Route exact path='/login'>
                     <LoginPage />
                 </Route>
