@@ -14,14 +14,12 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path='/login'>
+                <Route exact path='/'>
                     <LoginPage />
                 </Route>
-
                 <Route exact path='/cadastro'>
                     <SignUpPage />
                 </Route>
-
                 <Route exact path='/cadastro/endereço'>
                     <AdressRegisterPage />
                 </Route>
@@ -42,11 +40,11 @@ const Router = () => {
                     <ProfilePage/>
                 </Route>
 
-                <Route exact path='/editar/endereço'>
+                <Route exact path='/perfil/editar/endereço/:idUser'>
                     <EditAdressPage />
                 </Route>
 
-                <Route exact path='/editar/cadastro'>
+                <Route exact path='/perfil/editar/cadastro/:idUser'>
                     <EditSignUpPage />
                 </Route>
 
