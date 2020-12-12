@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { MainContainer, TitleContainer, RestaurantCardContainer, Img, NameRestaurant, CategoryContainer, TimeAndPriceContainer } from './styled';
 
-import SearchIcon from '@material-ui/icons/Search';
-
-
 
 const FeedPage = () => {
   const [restaurant, setRestaurant] = useState(undefined)

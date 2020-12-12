@@ -24,7 +24,7 @@ export const RestaurantCardContainer = styled.div`
 
 export const Img = styled.img`
     width: 270px;
-    height: 140px;
+    height: 200px;
 `
 
 export const NameRestaurant = styled.p`
@@ -42,10 +42,7 @@ export const CategoryContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    overflow-x: scroll;
-    margin: 0 10px;
-    width: 360px;
-
+    
     p {
         justify-content: space-between;
     }
