@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { MainContainer, TitleContainer, RestaurantCardContainer, Img, NameRestaurant, CategoryContainer, TimeAndPriceContainer } from './styled';
+import SearchPlacehoder from '../SearchPlacehoderPage/index'
 
 
 const FeedPage = () => {
@@ -52,6 +53,10 @@ const FeedPage = () => {
                   <Img src={data.logoUrl} />
                   <NameRestaurant>{data.name}</NameRestaurant>
                 </div>
+
+                {/* <div>
+                <SearchPlacehoder />
+                </div> */}
 
                 <TimeAndPriceContainer>
                   <p>{data.deliveryTime} min</p>
