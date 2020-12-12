@@ -3,6 +3,7 @@ import LoginPage from '../pages/RegistersAndLogin/LoginPage/index'
 import SignUpPage from '../pages/RegistersAndLogin/SignUpPage/index'
 import AdressRegisterPage from '../pages/RegistersAndLogin/AdressRegisterPage/index'
 import FeedPage from '../pages/Home/FeedPage/index'
+import SearchPlacehoder from '../pages/Home/SearchPlacehoderPage/index';
 import RestaurantPage from '../pages/RestaurantPage/index'
 import { BrowserRouter, Route,Switch } from 'react-router-dom';
 import CartPage from '../pages/CartPage';
@@ -30,6 +31,10 @@ const Router = () => {
 
                 <Route exact path='/restaurante'>
                     <RestaurantPage />
+                </Route>
+
+                <Route exact path='/search'>
+                    <SearchPlacehoder />
                 </Route>
 
                 <Route exact path='/carrinho'>
