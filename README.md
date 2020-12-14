@@ -10,7 +10,9 @@ Lilian Aparecida Verônica Nicolau,
 
 Vinicius Silveira Moraes,
 
-Patrícia de Abreu Otarão,
+Patrícia de Abreu Otarão
+.
+
 
 
 
