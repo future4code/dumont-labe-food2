@@ -1,6 +1,5 @@
 INTEGRANTES:
 Alexandre Oliveira
-
 Ana Patrícia Monteiro
 Isabela Rocha Silveira
 Lilian Aparecida Verônica Nicolau
@@ -11,7 +10,6 @@ Link do Surge:
 expensive-balls.surge.sh
 
 O que funciona:
-
 - rotas
 - tela de entrada (splash screen)
 - sign up
