@@ -37,6 +37,6 @@ export const ButtonSave = styled.button`
   padding: 12px 16px;
   border-radius: 3px;
   border: none;
-  background-color: #5cb646;
+  background-color: #e86e5a;
   margin: auto;
 `

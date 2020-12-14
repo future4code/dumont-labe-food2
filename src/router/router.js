@@ -19,13 +19,16 @@ const Router = () => {
                 <Route exact path={'/'} >
                     <SplashScreenPage />
                 </Route>
+               
                 <Route exact path='/login'>
                     <LoginPage />
                 </Route>
+               
                 <Route exact path='/cadastro'>
                     <SignUpPage />
                 </Route>
-                <Route exact path='/cadastro/endereço'>
+               
+                <Route exact path='/endereço'>
                     <AdressRegisterPage />
                 </Route>
 
