@@ -1,10 +1,16 @@
 INTEGRANTES:
-Alexandre Oliveira
-Ana Patrícia Monteiro
-Isabela Rocha Silveira
-Lilian Aparecida Verônica Nicolau
-Vinicius Silveira Moraes
-Patrícia de Abreu Otarão
+Alexandre Oliveira,
+
+Ana Patrícia Monteiro,
+
+Isabela Rocha Silveira,
+
+Lilian Aparecida Verônica Nicolau,
+
+Vinicius Silveira Moraes,
+
+Patrícia de Abreu Otarão,
+
 
 Link do Surge:
 expensive-balls.surge.sh
