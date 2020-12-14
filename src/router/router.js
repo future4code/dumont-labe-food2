@@ -1,11 +1,12 @@
 import React from 'react';
+import SplashScreenPage from '../pages/RegistersAndLogin/SplashScreen'
 import LoginPage from '../pages/RegistersAndLogin/LoginPage/index'
 import SignUpPage from '../pages/RegistersAndLogin/SignUpPage/index'
 import AdressRegisterPage from '../pages/RegistersAndLogin/AdressRegisterPage/index'
 import FeedPage from '../pages/Home/FeedPage/index'
 import SearchPlacehoder from '../pages/Home/SearchPlacehoderPage/index';
 import RestaurantPage from '../pages/RestaurantPage/index'
-import { BrowserRouter, Route,Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CartPage from '../pages/CartPage';
 import ProfilePage from '../pages/Profile/ProfilePage';
 import EditAdressPage from '../pages/Profile/EditAdressPage';
@@ -15,7 +16,10 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path='/'>
+                <Route exact path={'/'} >
+                    <SplashScreenPage />
+                </Route>
+                <Route exact path='/login'>
                     <LoginPage />
                 </Route>
                 <Route exact path='/cadastro'>
@@ -38,11 +42,11 @@ const Router = () => {
                 </Route>
 
                 <Route exact path='/carrinho'>
-                    <CartPage/>
+                    <CartPage />
                 </Route>
 
                 <Route exact path='/perfil'>
-                    <ProfilePage/>
+                    <ProfilePage />
                 </Route>
 
                 <Route exact path='/perfil/editar/endereço/:idUser'>
