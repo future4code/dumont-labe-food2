@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import {headers} from '../constants/headers.js'
+import {headers} from '../constants/headers'
 
 export const useRequestData = (url,initialState)=>{
     const [data,setData]=useState(initialState)

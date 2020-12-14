@@ -7,14 +7,10 @@ export const useForm = (initialState) =>{
         const newForm = {...form,[name]:value}        
         setForm(newForm)
     }
-
-    const setValues = (values) =>{
-        setForm(values)
-    }
-
+    
     const resetState = ()=>{
         setForm(initialState)
     }
 
-    return {form,onChange,resetState, setValues}
+    return {form,onChange,resetState}
 }
