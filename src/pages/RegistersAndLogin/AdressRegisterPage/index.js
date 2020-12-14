@@ -6,7 +6,6 @@ import { addAdress } from '../../../services/user'
 import { useProtectedPage } from '../../../hooks/useProtectedPage'
 import {useRequestData} from '../../../hooks/useRequestData'
 import { baseUrl } from '../../../constants/baseUrl'
-//import Footer from '../../../components/footer/Footer'
 
 const AddressPage = () => {
   useProtectedPage()
@@ -22,6 +21,11 @@ const AddressPage = () => {
     addAdress(form, history)
 
   }
+
+  const handleInputChange = (event)=>{
+    const {name,value}=event.target
+    onChange(name,value)
+}
 
   useEffect(() =>{
     getAllAddress && setValues(getAllAddress.address)
@@ -39,7 +43,7 @@ const AddressPage = () => {
           placeholder="Rua/Av."
           name="street"
           value={form.street}
-          onChange={onChange}
+          onChange={handleInputChange}
         />
         <Input
           required
@@ -50,7 +54,7 @@ const AddressPage = () => {
           placeholder="Número"
           name="number"
           value={form.number}
-          onChange={onChange}
+          onChange={handleInputChange}
           defaultValue="Hello World"
         />
         <Input
@@ -61,7 +65,7 @@ const AddressPage = () => {
           placeholder="Apto./Bloco"
           name="complement"
           value={form.complement}
-          onChange={onChange}
+          onChange={handleInputChange}
           defaultValue="Hello World"
         />
         <Input
@@ -73,7 +77,7 @@ const AddressPage = () => {
           placeholder="Bairro"
           name="neighbourhood"
           value={form.neighbourhood}
-          onChange={onChange}
+          onChange={handleInputChange}
           defaultValue="Hello World"
         />
         <Input
@@ -85,7 +89,7 @@ const AddressPage = () => {
           placeholder="Cidade"
           name="city"
           value={form.city}
-          onChange={onChange}
+          onChange={handleInputChange}
           defaultValue="Hello World"
         />
         <Input
@@ -97,10 +101,10 @@ const AddressPage = () => {
           placeholder="Estado"
           name="state"
           value={form.state}
-          onChange={onChange}
+          onChange={handleInputChange}
           defaultValue="Hello World"
         />
-        <ButtonSave variant="contained" color="primary" type="submit">
+        <ButtonSave variant="contained" type="submit">
           Salvar
         </ButtonSave>
       </FormContainer>
