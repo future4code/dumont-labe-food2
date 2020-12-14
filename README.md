@@ -25,7 +25,6 @@ O que funciona:
 - responsivo
 
 O que não funciona:
-
 - estilização do feed
 - search
 - quantidade desejada dos itens no restaurante
